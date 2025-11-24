@@ -1,0 +1,62 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.container-menu {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #720909;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+
+.sino-menu {
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav .menu a{
+    color: #FFFFFF;
+    font-family: Castoro Titling;
+    text-decoration: none;
+    padding: 0.4rem 0.7rem;
+    border-radius: 20px;
+    margin-left: 0.5rem;
+}
+
+.container-img-inicio{
+    max-width: 100rem;
+    margin: auto;
+}
+
+.container-img-inicio h1 {
+    display: flex;
+    align-items: co;
+    justify-content: flex-end;
+    font-size: 5rem;
+}
+
+.container-img-inicio .frango-inicio {
+    max-width: 98rem;
+}
+
+.container-img-inicio .sino-inicio {
+    justify-items: left;
+    max-width: 15rem;
+}
+
