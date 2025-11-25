@@ -1,7 +1,7 @@
 
 <html>
     <head>
-<title>Receita</title>
+        <title>Receita</title>
 
 
 <style>
@@ -14,8 +14,12 @@
     }
 
     .card {
+        display: flow-root;
         background-color: #f7f4e8;
-        width: 600px;
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        min-height: 0;
         padding: 30px;
         border-radius: 12px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -29,7 +33,7 @@
     }
 
     .imagem {
-        width: 100%;
+        /*width: 100%;
         height: 220px;
         background-color: #d9d9d9;
         border-radius: 8px;
@@ -39,7 +43,13 @@
         margin-bottom: 25px;
         font-weight: bold;
         font-size: 18px;
-        color: #555;
+        color: #555;*/
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+        margin-bottom: 25px;
     }
 
     h2 {
@@ -52,16 +62,16 @@
         margin-left: 20px;
     }
 </style>
+
 </head>
 
 <body>
     <div class="card">
         <div class="titulo">Frango Assado</div>
 
-        
-        <div class="imagem"><img src="imagens/frango assado.png"></div>
+        <img src="../imagens/frango assado.png" class="imagem">
 
-        <h2>IGREDIENTES</h2>
+        <h2>INGREDIENTES</h2>
         <ul>
             <li>1 frango inteiro</li>
             <li>Sal</li>
@@ -72,13 +82,13 @@
         </ul>
 
         <h2>MODO DE PREPARO</h2>
-        <ul>
-            <li>1 Pegue o frango, retire os miúdos.</li>
-            <li>2 Lave-o por dentro e por fora com água e limão, escorra.</li>
-            <li>3 Secar com um guardanapo de pano dentro e fora, em seguida passar sal por dentro e por fora, fazer o mesmo com a margarina ou manteiga.</li>
-            <li>4 Colocar em uma assadeira, adicionar a cebola inteira e os galhos de alecrim e manjericão no interior do frango Seara com um cubinho de margarina.</li>
-            <li>5 Levar para assar em forno médio até começar a dourar mais ou menos 40 minutos, aumentar o forno para o máximo para dourar e ficar crocante.</li>
-        </ul>
+        <ol type="1">
+            <li>Pegue o frango, retire os miúdos.</li>
+            <li>Lave-o por dentro e por fora com água e limão, escorra.</li>
+            <li>Secar com um guardanapo de pano dentro e fora, em seguida passar sal por dentro e por fora, fazer o mesmo com a margarina ou manteiga.</li>
+            <li>Colocar em uma assadeira, adicionar a cebola inteira e os galhos de alecrim e manjericão no interior do frango Seara com um cubinho de margarina.</li>
+            <li>Levar para assar em forno médio até começar a dourar mais ou menos 40 minutos, aumentar o forno para o máximo para dourar e ficar crocante.</li>
+        </ol>
     </div>
-</body> 
+</body>
 </html>
