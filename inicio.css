@@ -16,6 +16,7 @@ header {
     position: sticky;
     top: 0;
     background: #720909;
+    z-index: 99;
 }
 
 nav {
@@ -26,6 +27,7 @@ nav {
 }
 
 .sino-menu {
+    max-width: 5rem;
     display: flex;
     justify-content: flex-start;
 }
@@ -39,24 +41,40 @@ nav .menu a{
     margin-left: 0.5rem;
 }
 
-.container-img-inicio{
-    max-width: 100rem;
-    margin: auto;
-}
-
-.container-img-inicio h1 {
+.container-inicio {
+    width: 100%;
+    height: 600px;
+    background-image: url("imagens/frango-inicio.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
     display: flex;
-    align-items: co;
     justify-content: flex-end;
-    font-size: 5rem;
+    align-items: center;
+    padding-right: 3rem;
 }
 
-.container-img-inicio .frango-inicio {
-    max-width: 98rem;
+.texto-inicio {
+    position: absolute;
+    right: 2 rem;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: right;
 }
 
-.container-img-inicio .sino-inicio {
-    justify-items: left;
-    max-width: 15rem;
+.texto-inicio h1 {
+    font-family: "Candal", sans-serif;
+    margin: 0;
+    font-size: 6rem;
+    color: white;
+    font-weight: 900;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.55);
 }
 
+.texto-inicio .verde {
+    color: #A3EF99;
+}
+
+.sino-inicio {
+    max-width: 20%;
+}
