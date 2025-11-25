@@ -39,7 +39,7 @@ nav .menu a{
     padding: 0.4rem 0.7rem;
     border-radius: 20px;
     margin-left: 0.5rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .container-inicio {
@@ -81,7 +81,7 @@ nav .menu a{
 }
 
 #principais {
-    max-width: 2000px;
+    max-width: 1000px;
     margin: 3rem auto;
     padding: 0 1rem;
     text-align: center;
@@ -89,7 +89,7 @@ nav .menu a{
 
 .header-principais h2 {
     font-family: "Candal", sans-serif;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #620000;
     margin-bottom: 4rem;
 }
@@ -97,7 +97,7 @@ nav .menu a{
 .pratos-principais {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto auto;
     gap: 1.5rem;
 }
 
@@ -121,7 +121,7 @@ nav .menu a{
     left: 0.5rem;
     color: white;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0.2rem 0.5rem;
     background-color: rgba(0, 0, 0, 0.4);
@@ -132,3 +132,33 @@ nav .menu a{
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
 }
+
+/* PERU */
+.prato.peru {
+    grid-column: 3; /* Vai para a Coluna 3 (ao lado do Frango) */
+    grid-row: 1;    /* Fica na Linha 1 */
+}
+
+/* LOMBO */
+.prato.lombo {
+    grid-column: 3; /* Vai para a Coluna 3 (ao lado do Frango) */
+    grid-row: 2;    /* Fica na Linha 2, logo abaixo do Peru */
+}
+
+/* TENDER */
+.prato.tender {
+    /* O Frango só ocupa até a Linha 2, então o Tender pode ir para a Linha 3 */
+    grid-column: 1; /* Vai para a Coluna 1 (abaixo do Frango) */
+    grid-row: 3;    /* Fica na Linha 3 */
+}
+
+/* BACALHAU */
+.prato.bacalhau {
+    grid-column: 2; /* Vai para a Coluna 2 (ao lado do Tender) */
+    grid-row: 3;    /* Fica na Linha 3 */
+}
+
+/* O prato Lombo no seu design é pequeno e fica ao lado do Tender/Bacalhau.
+   Se você quiser que o Tender/Bacalhau fiquem *embaixo* do Frango,
+   a solução acima funciona, pois o Frango só ocupa até a Linha 2.
+*/
