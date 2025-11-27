@@ -1,11 +1,133 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Receita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+<style>
+
+    body {
+        background-color: #f2eedc;
+        font-family: Arial, sans-serif;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 100vh;
+    }
+
+    .card {
+        background-color: #f7f4e8;
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        box-sizing: border-box;
+    }
+
+    .titulo {
+        font-family: "Candal", sans-serif;
+        color: #620000;
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-family: "Candal", sans-serif;
+        color: #185503;
+    }
+
+    .imagem {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+        margin-bottom: 25px;
+    }
+
+    .tempo {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .tempo img {
+        max-width: 5%;
+    }
+
+    .tempo span {
+        margin-top: 0.3rem;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    ul, ol {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        padding-left: 0;
+    }
+
+    ul li, ol li {
+        margin-bottom: 8px;
+        line-height: 1.4;
+    }
+</style>
+
 </head>
+
 <body>
-    
+    <div class="card">
+        <div class="titulo">Bacalhau</div>
+
+        <img src="../imagens/bacalhau.jpeg" class="imagem">
+        <div class="tempo">
+            <img src="../imagens/relogio.png">
+            <span>40m</span>
+        </div>
+
+        <h2>INGREDIENTES</h2>
+        <ul>
+            <li>1 kg de bacalhau</li>
+            <li>1/2 kg de cenoura</li>
+            <li>2 tomates (vermelho e/ou amarelo)</li>
+            <li>1 colher (sopa) de extrato de tomate</li>
+            <li>1/2 kg de batata</li>
+            <li>2 cebolas grandes</li>
+            <li>1 pimentão</li>
+            <li>Leite de coco</li>
+            <li>Sal</li>
+            <li>Azeite de oliva a gosto</li>
+            <li>Alho a gosto</li>
+            <li>Azeitonas</li>
+            
+        </ul>
+
+        <h2>MODO DE PREPARO</h2>
+        <ol type="1">
+            <li>Dessalgue o bacalhau por 12 horas, em geladeira, trocando a água.</li>
+            <li>Corte em lascas o bacalhau, retire a pele.</li>
+            <li>Em uma assadeira coloque azeite de oliva no fundo, faça uma cama com cebola em rodelas, coloque por cima batatas cozidas em rodelas.</li>
+            <li>Coloque por cima o bacalhau em lascas.</li>
+            <li>Coloque outra camada de cebola, um pouco de alho em lascas, adicione pimentão cortado em palitos.</li>
+            <li>Coloque cenoura picadinha, algumas azeitonas (pode ser sem caroço), o tomate sem sementes e cheiro verde picado.</li>
+            <li>Acrescente o molho branco por cima, um pouco mais de cheiro verde, 1 colherada de extrato de tomate e regue leite de coco.</li>
+            <li>Finalize com um pouco de azeite de oliva.</li>
+            <li>Leve ao forno por 30 minutos à 180°C para gratinar.</li>
+            <li>Sirva com arroz branco.</li>
+            
+            
+           
+        </ol>
+    </div>
 </body>
 </html>
