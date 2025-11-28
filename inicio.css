@@ -44,7 +44,7 @@ nav .menu a{
 }
 
 nav .menu a:hover {
-    background-color: #4b0606;
+    background-color: #185503;
 }
 
 .container-inicio {
@@ -132,16 +132,6 @@ nav .menu a:hover {
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 4px;
 }
-
-/*.prato.frango {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-} */
-
-/*.pratos-principais > .link-principal {
-    grid-column: 1 / span 2;
-    grid-row: 1 / span 2;
-}*/
 
 /* 1. FRANGO ASSADO */
 .pratos-principais > .link-principal:nth-child(1) {
@@ -327,4 +317,15 @@ nav .menu a:hover {
     text-decoration: none;
     display: block;
     color: inherit
+}
+
+.botao-topo {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    padding: 1.3rem 1.3rem;
+    border-radius: 999px;
+    background: #620000;
+    color: #eee;
+    text-decoration: none;
 }
