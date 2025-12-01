@@ -212,12 +212,12 @@ nav .menu a:hover {
 }
 
 .acompanhamento {
+    flex-direction: column;
     position: relative;
     align-items: center;
     text-align: center;
     max-width: 300px;
     height: 400px;
-    overflow: hidden;
 }
 
 .acompanhamento img {
@@ -289,7 +289,6 @@ nav .menu a:hover {
     text-align: center;
     max-width: 300px;
     height: auto;
-    overflow: hidden;
 }
 
 .sobremesa img {
